@@ -110,7 +110,7 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 ## 🧑‍💻 Author
 
-Made by [Clay Mark Sarte](https://github.com/McKlay)
+Made by [Clay Mark Sarte](https://github.com/McKlay)  
 Email: [sarteclaymark@gmail.com](mailto:sarteclaymark@gmail.com)
 
 ---
