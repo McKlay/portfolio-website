@@ -98,9 +98,10 @@ Visit: [http://localhost:5173](http://localhost:5173)
 
 ## 📷 Preview
 
-| Hero Section                                                                                         | Projects Section                                                                                             | Skills Section                                                                                             |
-| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Hero Section                                                                                          | Projects Section                                                                                              | Skills Section                                                                                               |
+|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | ![hero](https://huggingface.co/datasets/McKlay/documentation-images/resolve/main/portfolio-website-data/Hero.png) | ![projects](https://huggingface.co/datasets/McKlay/documentation-images/resolve/main/portfolio-website-data/Projects.png) | ![skills](https://huggingface.co/datasets/McKlay/documentation-images/resolve/main/portfolio-website-data/Skills.png) |
+
 
 
 ---
