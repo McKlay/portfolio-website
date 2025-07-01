@@ -18,7 +18,7 @@ tags:
   - website
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://clay-portfolio.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b0a27f6-2bcf-4583-becd-31947550883c/deploy-status)](https://app.netlify.com/projects/clay-portfolio/deploys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub last commit](https://img.shields.io/github/last-commit/McKlay/portfolio-website)
 ![GitHub stars](https://img.shields.io/github/stars/McKlay/portfolio-website?style=social)
@@ -40,7 +40,7 @@ It showcases my skills in **Full Stack Development**, **AI/ML**, and **Embedded 
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Frontend**: React + Vite
 - **Styling**: Tailwind CSS
@@ -62,9 +62,9 @@ It showcases my skills in **Full Stack Development**, **AI/ML**, and **Embedded 
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
-```python
+```bash
 
 portfolio-website/
 ├── public/               # Static assets (images, videos)
@@ -83,7 +83,7 @@ portfolio-website/
 
 ---
 
-## 🖥️ Local Development
+## Local Development
 
 ```bash
 git clone https://github.com/McKlay/portfolio-website
