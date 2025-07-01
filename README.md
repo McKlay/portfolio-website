@@ -32,6 +32,8 @@ It showcases my skills in **Full Stack Development**, **AI/ML**, and **Embedded 
 
 > 💫 Inspired by [spaceportfolio.netlify.app](https://spaceportfolio.netlify.app)
 
+![hero](https://huggingface.co/datasets/McKlay/documentation-images/resolve/main/portfolio-website-data/Hero.png)
+
 ---
 
 ## 🌐 Live Demo
