@@ -1,12 +1,85 @@
-# React + Vite
+# Clay Mark Sarte — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A space-inspired personal portfolio built with **React**, **Vite**, and **Tailwind CSS**.  
+Showcases my work across **Full Stack Development**, **AI/ML Projects**, and **Embedded Systems** — with cosmic visuals and smooth animations.
 
-Currently, two official plugins are available:
+> Inspired by [spaceportfolio.netlify.app](https://spaceportfolio.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React + Vite + Tailwind CSS
+- **Routing**: React Router v6
+- **Animation**: Framer Motion
+- **Visuals**: Custom video overlays, icon orbits, rotating titles
+- **Deployment**: Netlify (Free Tier)
+
+---
+
+## Folder Structure
+
+```bash
+
+/
+├── public/               # Assets (videos, images)
+├── src/
+│   ├── components/       # Layout, sections, subcomponents
+│   ├── constants/        # Project & skill data arrays
+│   ├── pages/            # React Router pages (Home, Projects, etc.)
+│   ├── utils/            # Animation configs (Framer Motion)
+│   └── assets/           # Static SVGs, background styles
+
+```
+
+---
+
+## Local Setup
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/McKlay/portfolio-website.git
+cd portfolio-website
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the dev server
+npm run dev
+```
+
+The site will run at [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🌐 Live Demo
+
+**[View Portfolio on Netlify](https://your-netlify-site.netlify.app/)**
+*(Replace after deployment)*
+
+---
+
+## Features
+
+* Hero section with orbiting icons & animated titles
+* Global starfield & blackhole background effects
+* Clickable project cards linking to live demos
+* Encryption & Security video section
+* Responsive and mobile-friendly layout
+* Smooth scroll & component transitions
+
+---
+
+## License
+
+This project is open-source under the **MIT License**.
+
+---
+
+## Contact
+
+* GitHub: [@McKlay](https://github.com/McKlay)
+* LinkedIn: [linkedin.com/in/claymarksarte](https://linkedin.com/in/claymarksarte)
+* Email: [sarteclaymark@gmail.com](mailto:sarteclaymark@gmail.com)
+
+---
