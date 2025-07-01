@@ -20,7 +20,6 @@ Showcases my work across **Full Stack Development**, **AI/ML Projects**, and **E
 ## Folder Structure
 
 ```bash
-
 /
 ├── public/               # Assets (videos, images)
 ├── src/
@@ -29,22 +28,25 @@ Showcases my work across **Full Stack Development**, **AI/ML Projects**, and **E
 │   ├── pages/            # React Router pages (Home, Projects, etc.)
 │   ├── utils/            # Animation configs (Framer Motion)
 │   └── assets/           # Static SVGs, background styles
-
 ```
 
 ---
 
 ## Local Setup
 
-```bash
 # 1. Clone the repository
+```bash
 git clone https://github.com/McKlay/portfolio-website.git
 cd portfolio-website
+```
 
 # 2. Install dependencies
+```bash
 npm install
+```
 
 # 3. Run the dev server
+```bash
 npm run dev
 ```
 
