@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative w-full h-screen flex items-center justify-center text-white overflow-hidden px-4 pt-20"
+      className="relative w-full min-h-screen flex items-center justify-center text-white overflow-hidden px-4 pt-24 sm:pt-28"
     >
       {/* Blackhole video */}
       <video
@@ -20,9 +20,9 @@ const Hero = () => {
       </video>
 
       {/* Hero content */}
-      <div className="relative z-10 max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="relative z-10 max-w-7xl w-full flex flex-col lg:flex-row items-center justify-between gap-12 sm:gap-20">
         {/* LEFT: TEXT */}
-        <div className="flex-1 text-center lg:text-left">
+        <div className="flex-1 text-center lg:text-left px-2">
           <div className="inline-block px-4 py-2 mb-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-sm font-semibold">
             Fullstack + AI Portfolio
           </div>
@@ -36,7 +36,7 @@ const Hero = () => {
             for a Multi-Planetary Future.
           </h1>
 
-          <p className="mt-6 text-base sm:text-lg text-gray-300 max-w-xl">
+          <p className="mt-6 text-base sm:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0">
             I’m a Full Stack & AI Software Engineer with a background in embedded systems, passionate about building intelligent systems for real-world impact—from cloud to chip, frontend to inference. Explore my projects at the frontier of web, AI, and automation.
           </p>
 
@@ -49,7 +49,7 @@ const Hero = () => {
         </div>
 
         {/* RIGHT: Orbit Icons + Rotating Titles */}
-        <div className="flex-1 flex flex-col items-center justify-center relative">
+        <div className="flex-1 flex flex-col items-center justify-center relative px-4">
           <OrbitIcons />
 
           {/* Titles under orbit icons */}

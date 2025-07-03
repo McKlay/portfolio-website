@@ -4,14 +4,14 @@ import { slideInFromTop } from "../../utils/motion";
 
 const Encryption = () => {
   return (
-    <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full -z-20 overflow-hidden">
+    <div className="flex flex-col items-center justify-center relative min-h-screen w-full h-full -z-20 overflow-hidden px-4">
       {/* Headline */}
-      <div className="absolute top-0 z-[5]">
+      <div className="absolute top-6 z-[5] px-2">
         <motion.div
           variants={slideInFromTop}
           initial="hidden"
           animate="visible"
-          className="text-[40px] font-medium text-center text-gray-200"
+          className="text-2xl sm:text-3xl md:text-4xl font-medium text-center text-gray-200"
         >
           Performance{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -27,13 +27,13 @@ const Encryption = () => {
           <img
             src="/assets/images/lock-top.png"
             alt="Lock top"
-            width={50}
+            width={40}
             className="translate-y-5 transition-all duration-200 group-hover:translate-y-11"
           />
           <img
             src="/assets/images/lock-main.png"
             alt="Lock main"
-            width={70}
+            width={60}
             className="z-10"
           />
         </div>
@@ -43,8 +43,8 @@ const Encryption = () => {
       </div>
 
       {/* Subtext */}
-      <div className="absolute z-[20] bottom-[10px] px-2">
-        <p className="text-center text-gray-300 text-[18px]">
+      <div className="absolute z-[20] bottom-[10px] px-4 text-center">
+        <p className="text-gray-300 text-base sm:text-lg">
           Secure your data with end-to-end encryption.
         </p>
       </div>

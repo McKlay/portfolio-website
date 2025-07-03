@@ -30,7 +30,7 @@ tags:
 This is my personal space-themed portfolio website built with **React**, **Vite**, and **Tailwind CSS**.  
 It showcases my skills in **Full Stack Development**, **AI/ML**, and **Embedded Systems**, with a clean and animated cosmic interface.
 
-> 💫 Inspired by [spaceportfolio.netlify.app](https://spaceportfolio.netlify.app)
+> 💫 Inspired by [spaceportfolio.netlify.app](https://clay-portfolio.netlify.app)
 
 ![hero](https://huggingface.co/datasets/McKlay/documentation-images/resolve/main/portfolio-website-data/Hero.png)
 
