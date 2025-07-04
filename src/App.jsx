@@ -6,6 +6,7 @@ import Projects from './components/sections/Projects';
 import Encryption from './components/sections/Encryption';
 import Footer from './components/layout/Footer';
 import { StarsCanvas } from './components/GlobalStarfield';
+import ChatWidget from "./components/chatbot/ChatWidget";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Projects />
       <Encryption />
       <Footer />
+      <ChatWidget />
     </div>
   );
 };
