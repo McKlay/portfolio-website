@@ -1,0 +1,65 @@
+/* Ensure chatbot is always above the UI */
+.react-chatbot-kit-chat-container {
+  z-index: 9999 !important;
+}
+
+/* Wrapper for the user input field */
+.react-chatbot-kit-user-input {
+  background-color: transparent !important;
+  border-top: 1px solid #4f46e5 !important;
+  padding: 0.75rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* ✅ Actual textbox input (fixed invisibility) */
+.react-chatbot-kit-chat-input {
+  background-color: #1f2937 !important;   /* Tailwind gray-800 */
+  color: #ffffff !important;              /* White input text */
+  caret-color: #9333ea !important;        /* Purple caret */
+  border: none !important;
+  outline: none !important;
+  padding: 0.5rem 0.75rem !important;
+  font-size: 14px !important;
+  width: 100% !important;
+}
+
+/* Placeholder text styling */
+.react-chatbot-kit-chat-input::placeholder {
+  color: #9ca3af !important; /* Tailwind gray-400 */
+}
+
+/* Styling for bot message bubble */
+.react-chatbot-kit-chat-bot-message {
+  color: #ffffff !important;
+  background-color: #374151 !important; /* Tailwind gray-700 */
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+}
+
+/* Styling for user message bubble */
+.react-chatbot-kit-user-chat-message {
+  color: #ffffff !important;
+  background-color: #4f46e5 !important; /* Tailwind indigo-600 */
+  border-radius: 8px !important;
+  padding: 0.5rem 1rem !important;
+}
+
+/* ✅ Typing animation effect */
+.react-chatbot-kit-chat-bot-message:has(span.typing) {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.typing::after {
+  content: "⠋";
+  animation: dots 1.2s infinite steps(5, end);
+}
+
+@keyframes dots {
+  0%   { content: "⠋"; }
+  25%  { content: "⠙"; }
+  50%  { content: "⠹"; }
+  75%  { content: "⠸"; }
+  100% { content: "⠼"; }
+}
