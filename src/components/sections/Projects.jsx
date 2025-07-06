@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { PROJECTS } from "@/constants/PROJECT_DATA";
+import { Link } from "react-router-dom"; // ✅ changed from react-scroll
 
 const Projects = () => {
   return (
@@ -23,6 +24,14 @@ const Projects = () => {
           />
         ))}
       </div>
+
+      {/* View All Projects Button */}
+      <Link
+        to="/projects"
+        className="mt-12 px-6 py-3 bg-purple-600 text-white rounded-xl text-base sm:text-lg font-semibold hover:bg-purple-700 cursor-pointer transition-all"
+      >
+        View All Projects
+      </Link>
     </section>
   );
 };

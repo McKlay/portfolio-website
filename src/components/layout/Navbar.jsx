@@ -1,5 +1,6 @@
+// File Name: Navbar.jsx
 import { FaInstagram, FaFacebookF, FaTwitter } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -13,13 +14,13 @@ const Navbar = () => {
 
         {/* Center: Menu Links */}
         <nav className="bg-gradient-to-r from-purple-900 via-purple-600 to-purple-900 rounded-full px-6 py-2 flex flex-wrap justify-center gap-4 text-white font-medium text-sm backdrop-blur-sm shadow-md lg:transform lg:-translate-x-10">
-          <Link to="hero" smooth={true} duration={500} className="cursor-pointer hover:text-purple-300">
+          <Link to="/#hero" className="cursor-pointer hover:text-purple-300">
             About me
           </Link>
-          <Link to="skills" smooth={true} duration={500} className="cursor-pointer hover:text-purple-300">
+          <Link to="/#skills" className="cursor-pointer hover:text-purple-300">
             Skills
           </Link>
-          <Link to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-purple-300">
+          <Link to="/#projects" className="cursor-pointer hover:text-purple-300">
             Projects
           </Link>
           <a href="https://github.com/McKlay/portfolio-website" target="_blank" rel="noreferrer" className="hover:text-purple-300">
