@@ -185,6 +185,14 @@ export const PROJECT_GALLERY = {
       tech: ["mlops.Tracking", "mlops.Deployment", "mlops.Pipeline", "mlops.Monitoring"],
       link: "https://mcklay.github.io/MLops-Project-Handbook/",
       image: "/assets/images/project-gallery/docs/mlops.png",
+    },
+    {
+      id: "doc05",
+      name: "AI Chatbot Engineering",
+      description: "From prototype to platform—building, scaling, and monetizing intelligent chatbots in the era of large language models.",
+      tech: ["ai_chatbot.IntentRecognition", "ai_chatbot.PromptEngineering", "ai_chatbot.Monitoring"],
+      link: "https://mcklay.github.io/ai-chatbot-engineering/",
+      image: "/assets/images/project-gallery/docs/chatbot.png",
     }
   ]
 };
