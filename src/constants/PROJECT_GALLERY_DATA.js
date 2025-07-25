@@ -193,6 +193,14 @@ export const PROJECT_GALLERY = {
       tech: ["ai_chatbot.IntentRecognition", "ai_chatbot.PromptEngineering", "ai_chatbot.Monitoring"],
       link: "https://mcklay.github.io/ai-chatbot-engineering/",
       image: "/assets/images/project-gallery/docs/chatbot.png",
+    },
+    {
+      id: "doc06",
+      name: "Codebase Architecture: Designing for Scale, Modularity, and Sanity",
+      description: "A practical, developer-first handbook for structuring React + FastAPI projects—from AI MVPs to scalable platforms.",
+      tech: ["codebase.Frontend()", "codebase.Backend()", "codebase.Database()", "codebase.AIIntegration()"],
+      link: "https://mcklay.github.io/codebase-architecture/",
+      image: "/assets/images/project-gallery/docs/codebase_arch.png",
     }
   ]
 };
