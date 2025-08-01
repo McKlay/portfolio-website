@@ -1,5 +1,10 @@
 import axios from "axios";
 
+const BACKEND_URL =
+  import.meta.env.DEV
+    ? "http://127.0.0.1:8000/chat" // ✅ local FastAPI server
+    : "https://claybot-backend.onrender.com/chat"; // ✅ production Render server
+
 class ActionProvider {
   constructor(createChatBotMessage, setStateFunc) {
     this.createChatBotMessage = createChatBotMessage;
@@ -18,9 +23,7 @@ class ActionProvider {
     }));
 
     try {
-      const res = await axios.post("https://claybot-backend.onrender.com/chat", {
-        message,
-      });
+      const res = await axios.post(BACKEND_URL, { message });
 
       const botMessage = this.createChatBotMessage(res.data.response);
 
