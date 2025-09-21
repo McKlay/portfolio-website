@@ -92,6 +92,14 @@ export const PROJECT_GALLERY = {
         tech: ["DeepSORT ", "RAFT"],
         link: "https://github.com/McKlay",
         image: "/assets/images/project-gallery/vision/advanced/traffic-sign.png",
+      },
+      {
+        id: "cv-a3",
+        name: "ScanlyAI—Intelligent Document Processing",
+        description: "ScanlyAI is a tool that reads receipts and invoices, pulls out useful info, and organizes it for easy tracking.",
+        tech: ["FastAPI", "Tesseract OCR", "gpt-5-chat-latest"],
+        link: "https://github.com/ClayAI-Labs/scanlyAI-frontend",
+        image: "/assets/images/project-gallery/vision/advanced/ScanlyAI-data.png",
       }
     ],
   },
