@@ -164,7 +164,7 @@ export const PROJECT_GALLERY = {
     },
     {
       id: "doc02",
-      name: "PyTorch Builder’s Companion Book",
+      name: "Tensorflow Builder’s Companion Book",
       description: "From Tensors to Vision & NLP — a deep dive into TensorFlow for learners, builders, and researchers.",
       tech: ["tf.GradientTape", "tf.keras", "tf.function"],
       link: "https://mcklay.github.io/TensorFlow-Companion-Book",
