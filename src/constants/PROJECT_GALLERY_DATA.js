@@ -98,7 +98,7 @@ export const PROJECT_GALLERY = {
         name: "ScanlyAI—Intelligent Document Processing",
         description: "ScanlyAI is a tool that reads receipts and invoices, pulls out useful info, and organizes it for easy tracking.",
         tech: ["FastAPI", "Tesseract OCR", "gpt-5-chat-latest"],
-        link: "https://github.com/ClayAI-Labs/scanlyAI-frontend",
+        link: "https://neo-scanlyai.vercel.app/",
         image: "/assets/images/project-gallery/vision/advanced/ScanlyAI-data.png",
       }
     ],
