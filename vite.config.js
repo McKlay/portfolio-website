@@ -9,4 +9,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  server: {
+    historyApiFallback: true, // Redirects all routes to index.html for client-side routing
+  },
 });
