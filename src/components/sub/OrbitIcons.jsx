@@ -19,7 +19,7 @@ const icons = [
 const OrbitIcons = () => {
   return (
     <div className="relative w-48 h-48">
-      <div className="absolute w-full h-full rounded-full border border-white/10 animate-spin-slow">
+      <div className="absolute w-full h-full animate-spin-slow">
         {icons.map((item, index) => {
           const angle = (360 / icons.length) * index;
           const transform = `rotate(${angle}deg) translate(7rem) rotate(-${angle}deg)`;
