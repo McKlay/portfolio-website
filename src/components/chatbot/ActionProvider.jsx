@@ -103,14 +103,14 @@ class ActionProvider {
       await axios.post(`${BACKEND_URL}/clear-history?session_id=${this.sessionId}`);
       console.log("✅ Backend history cleared");
       
-      // Reset messages to initial state
-      const initialMessages = [
-        this.createChatBotMessage("👋 Hi! I'm ClayBot, your guide to Clay's portfolio."),
-        this.createChatBotMessage(
-          "I can remember our conversation, so feel free to ask follow-up questions! Try asking: 'What projects has Clay worked on?' or 'What are Clay's skills?'"
-        ),
-      ];
+      // Create messages while 'this' context is still valid
+      const msg1 = this.createChatBotMessage("👋 Hi! I'm ClayBot, your guide to Clay's portfolio.");
+      const msg2 = this.createChatBotMessage(
+        "I can remember our conversation, so feel free to ask follow-up questions! Try asking: 'What projects has Clay worked on?' or 'What are Clay's skills?'"
+      );
+      const initialMessages = [msg1, msg2];
 
+      // Reset messages to initial state
       this.setState((prev) => ({
         ...prev,
         messages: initialMessages,
