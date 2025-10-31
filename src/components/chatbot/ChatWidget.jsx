@@ -13,19 +13,38 @@ const ChatWidget = () => {
 
   const handleClearHistory = async () => {
     console.log("🧹 Clear button clicked");
-    // Call backend to clear history for current session
-    if (window.currentActionProvider && window.currentActionProvider.clearHistory) {
-      console.log("📞 Calling clearHistory on ActionProvider...");
-      await window.currentActionProvider.clearHistory();
-      console.log("✅ History cleared successfully");
-    } else {
-      console.warn("⚠️ ActionProvider not found on window object");
+    
+    try {
+      // Get the current action provider before remounting
+      const currentProvider = window.currentActionProvider;
+      if (currentProvider?.sessionId) {
+        const sessionId = currentProvider.sessionId;
+        console.log("🆔 Current session ID:", sessionId);
+        
+        // Call backend to clear history
+        const BACKEND_URL = import.meta.env.DEV
+          ? "http://127.0.0.1:8000"
+          : "https://claybot-backend.onrender.com";
+        
+        console.log(`📡 Calling backend: ${BACKEND_URL}/clear-history?session_id=${sessionId}`);
+        await fetch(`${BACKEND_URL}/clear-history?session_id=${sessionId}`, {
+          method: 'POST'
+        });
+        console.log("✅ Backend history cleared");
+      }
+    } catch (error) {
+      console.error("❌ Error clearing backend history:", error);
     }
+    
+    // Force chatbot to remount with fresh initial messages
+    // This triggers a new ActionProvider instance with fresh state
+    setKey(prevKey => prevKey + 1);
+    console.log("🔄 Chat reset and remounted");
   };
 
   const handleCloseChat = async () => {
     console.log("❌ Chat widget closed");
-    // Automatically clear history when closing chat
+    // Clear history when closing chat
     await handleClearHistory();
     // Close the chat widget
     setIsOpen(false);

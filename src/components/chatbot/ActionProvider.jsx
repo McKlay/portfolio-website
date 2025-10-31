@@ -1,4 +1,5 @@
 import axios from "axios";
+import { createChatBotMessage } from "react-chatbot-kit";
 import { parseMarkdown } from "./parseMarkdown";
 
 const BACKEND_URL =
@@ -93,38 +94,6 @@ class ActionProvider {
   }
 
   /**
-   * Clear conversation history on the backend
-   */
-  async clearHistory() {
-    console.log("🧹 clearHistory method called");
-    console.log("🆔 Current session ID:", this.sessionId);
-    try {
-      console.log(`📡 Calling backend: ${BACKEND_URL}/clear-history?session_id=${this.sessionId}`);
-      await axios.post(`${BACKEND_URL}/clear-history?session_id=${this.sessionId}`);
-      console.log("✅ Backend history cleared");
-      
-      // Create messages while 'this' context is still valid
-      const msg1 = this.createChatBotMessage("👋 Hi! I'm ClayBot, your guide to Clay's portfolio.");
-      const msg2 = this.createChatBotMessage(
-        "I can remember our conversation, so feel free to ask follow-up questions! Try asking: 'What projects has Clay worked on?' or 'What are Clay's skills?'"
-      );
-      const initialMessages = [msg1, msg2];
-
-      // Reset messages to initial state
-      this.setState((prev) => ({
-        ...prev,
-        messages: initialMessages,
-      }));
-      console.log("✅ UI messages reset");
-
-      return "Conversation history cleared successfully.";
-    } catch (error) {
-      console.error("❌ Error clearing history:", error);
-      return "Failed to clear history.";
-    }
-  }
-
-  /**
    * Start a new session (generates new session ID)
    */
   startNewSession() {
@@ -132,8 +101,8 @@ class ActionProvider {
     
     // Reset messages to initial state
     const initialMessages = [
-      this.createChatBotMessage("👋 Hi! I'm ClayBot, your guide to Clay's portfolio."),
-      this.createChatBotMessage(
+      createChatBotMessage("👋 Hi! I'm ClayBot, your guide to Clay's portfolio."),
+      createChatBotMessage(
         "I can remember our conversation, so feel free to ask follow-up questions! Try asking: 'What projects has Clay worked on?' or 'What are Clay's skills?'"
       ),
     ];
